@@ -1,0 +1,21 @@
+第二天，努力赶进度。
+1、Pytorch中张量部分完成，学习了很多API。（前两个视频笔记太过草率，待补充）
+如：is_tensor判断是否为张量；
+       is_complex判断当前数据是否为复数类型；
+       numel返回张量中所有元素的数目；
+       arange遍历,range遍历+1；
+       cat，拼接；
+       reshape，改变行列；
+       squeeze，把大小为1的维度删除；
+       take，把任意张量设置成一维张量后取值；
+       tile，复制；
+       transpose，转置；
+       unbind，移除张量维度；
+       unsqueeze，在指定的维度上扩充一维；
+       where，判断语句；
+       torch.manual_seed(seed)，为生成随机数设置一个种子；
+       rand，在[0,1)中采样；
+       randint，随机生成整数，需传入上界和下界以及size；
+       randn，基于均值为0，标准差为1的正态分布中得到随机数；
+       randperm，得到一个随机组合。
+2、学习OpenVINO前五节。
