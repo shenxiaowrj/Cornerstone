@@ -1,0 +1,5 @@
+1、今日对PyTorch中的Dataset和DataLoader进行了一定的了解：
+     torch.utils.data.DataLoader，用来处理多个样本
+     torch.utils.data.Dataset，用来处理单个样本
+     构建自定义的Dataset时，必须实现3个函数：_init_、_len_、_getitem_
+2、学习了numpy的一部分，具体总结在明天。
