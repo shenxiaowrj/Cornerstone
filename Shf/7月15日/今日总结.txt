@@ -1,0 +1,36 @@
+1、numpy入门视频完成，重要API如下：
+- 创建和生成
+  - `np.linspace(start, end, nums)`
+  - `rng.integers/uniform(low, high, size)`
+  - `rng.normal(loc, scale, size)`
+- 统计和属性
+  - `arr.shape`
+  - `arr.sum/max/min(axis, keepdims)`
+  - `np.average(arr, axis)`
+- 形状和转换
+  - `arr.reshpae/np.reshape`
+  - `np.expand_dims(arr, axis)`
+  - `np.squeeze(arr axis)`
+  - `np.transpose(arr, axis)`
+  - `arr.T`
+- 分解和组合
+  - `arr[start:stop:step, ...]`
+  - `np.concatenate((arr1, arr2), axis)`
+  - `np.stack((arr1, arr2), axis)`
+  - `np.repeat(arr, repeat_num, axis)`
+  - `np.split(arr, part_num, axis)`
+- 筛选和过滤
+  - `np.where(condition, arr, replaced_val)`
+  - `rng.choice(a, size, replace=False, p=probs_size_equals_a)`
+  - `rng.argmax/argmin/argsort(arr, axis)`
+- 矩阵和计算
+  - `+-*/`
+  - `np.dot(a, b) == a.dot(b)`
+  - `np.matmul(a, b) == a @ b`
+注：
+- 生成/查看 array 时，注意具体的数据类型；
+- 很多 API 都有 axis，将它理解为「沿着」或「对」某一维度进行操作就很容易理解了。
+
+2、深入剖析PyTorch DataLoader源码（单个样本组织成一个批次，再用于神经网络的训练）
+
+3、OpenVINO初级教程完成。
