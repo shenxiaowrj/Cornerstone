@@ -1,0 +1,1 @@
+今天主要完成了openvino的前十三个课程的学习，并学习了numpy。通过学习发现，numpy与张量的api大致相同，但其中还有几个api有些疑问，如argsort、vdot、matmul等。
