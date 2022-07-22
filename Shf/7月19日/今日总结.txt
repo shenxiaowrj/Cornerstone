@@ -1,0 +1,35 @@
+1、深入剖析PyTorch的state_dict、parameters、modules源码
+
+torch.save(model, 'model.pth')  #保存
+model = torch.load('model.pth') #加载
+
+#测试类
+class Test(torch.nn.Module):
+    def __init__(self):
+        super(Test,self).__init__()
+        self.linear1=torch.nn.Linear(2,3)
+        self.linear2=torch.nn.Linear(3,4)
+        self.batch_norm=torch.nn.BatchNorm2d(4)
+#实例化        
+test_module=Test() 
+#调用modules
+test_module._modules
+
+
+2、深入剖析PyTorch的nn.Sequential及ModuleList源码
+Sequential(Module)，有序，具有前向运算功能
+#传入一些实例或字典
+model=nn.Sequential(
+    nn.Conv2d(1,20,5),
+    nn.ReLU(),
+    nn.Conv2d(20,64,5),
+    nn.ReLU()
+)
+
+ModuleList(Module)，把很多子module放到一个列表中
+ModuleDict(Module)，用字典构建
+ParametersList(Module)，把参数放到一个列表中
+ParameterDict(Module)，同上
+
+3、pandas基础
+      详见笔记
