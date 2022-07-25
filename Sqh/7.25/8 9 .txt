@@ -1,0 +1,8 @@
+container.py文件中包含了module中一系列容器 
+
+不论学习什么框架，首先都要了解这个框架怎么保存模型，以及怎么加载模型
+
+每一个module的实例或者子类都会有一个state_dict即状态字典，包含对应Module之中所有的参数和 buffer
+
+构建大模型的时候一般都会用到sequential这个API，目的是把很多层直接串联起来
+sequential具有前向运算的功能，modulelist只有存放功能
